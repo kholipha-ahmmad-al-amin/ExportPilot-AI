@@ -1,0 +1,20 @@
+{
+  "short_name": "ExportPilot",
+  "name": "ExportPilot AI (গ্লোবাল-ব্যাপারী)",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0B1120",
+  "theme_color": "#064E3B",
+  "display": "standalone"
+}
