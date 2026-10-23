@@ -1,0 +1,50 @@
+2026-10-23T11:24:45  Fetching changes.
+2026-10-23T11:24:46    Starting  LocalZipHandler
+2026-10-23T11:24:46    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/972a2a00-913e-4cc2-be08-4cc563214022.zip (5.05 MB) to /tmp/zipdeploy/extracted
+2026-10-23T11:24:52  Updating submodules.
+2026-10-23T11:24:53  Preparing deployment for commit id '761676be-7'.
+2026-10-23T11:24:54  PreDeployment: context.CleanOutputPath False
+2026-10-23T11:24:55  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-10-23T11:24:55  Repository path is /tmp/zipdeploy/extracted
+2026-10-23T11:24:55  Running oryx build...
+2026-10-23T11:24:55    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.11 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8df30f842a46b4a --compress-destination-dir --dependency-resolution-output-dir '/home/site/deployments/761676be-7b14-46cd-a0cb-dc3913fd7b14/dependency-resolution' | tee /tmp/oryx-build.log
+2026-10-23T11:25:08    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-10-23T11:25:09    You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-10-23T11:25:09    
+2026-10-23T11:25:09    Oryx Version: 0.2.20260904.4+b59c18270651a915d8674b6d8baef6adf95bae39, Commit: b59c18270651a915d8674b6d8baef6adf95bae39, ReleaseTagName: 20260904.4
+2026-10-23T11:25:09    
+2026-10-23T11:25:10    Build Operation ID: 79f16cc375a24560
+2026-10-23T11:25:10    Repository Commit : 761676be-7b14-46cd-a0cb-dc3913fd7b14
+2026-10-23T11:25:10    OS Type           : bookworm
+2026-10-23T11:25:10    Image Type        : githubactions
+2026-10-23T11:25:10    
+2026-10-23T11:25:11    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-10-23T11:25:11    Backup SDK Storage URL: 
+2026-10-23T11:25:11    ACR SDK Registry URL: https://mcr.microsoft.com
+2026-10-23T11:25:11    SDK provider status:
+2026-10-23T11:25:11      External ACR SDK provider: Enabled
+2026-10-23T11:25:12      External SDK provider: Disabled
+2026-10-23T11:25:12      Direct ACR SDK provider: Enabled
+2026-10-23T11:25:12      Blob SDK provider: Disabled
+2026-10-23T11:25:13    External ACR SDK provider is enabled. Only using user-specified platform: python
+2026-10-23T11:25:13    Detecting platforms...
+2026-10-23T11:25:26    External ACR provider resolved version '3.11.17' for python.
+2026-10-23T11:25:27    Version resolved using external ACR SDK provider.
+2026-10-23T11:25:27    Detected following platforms:
+2026-10-23T11:25:27      python: 3.11.17
+2026-10-23T11:25:36    
+2026-10-23T11:25:40    Using intermediate directory '/tmp/8df30f842a46b4a'.
+2026-10-23T11:25:40    
+2026-10-23T11:25:41    Copying files to the intermediate directory...
+2026-10-23T11:25:45    Copying files to intermediate directory done in 5 sec(s).
+2026-10-23T11:25:45    
+2026-10-23T11:25:45    Source directory     : /tmp/8df30f842a46b4a
+2026-10-23T11:25:46    Destination directory: /home/site/wwwroot
+2026-10-23T11:25:46    
+2026-10-23T11:25:48    Running build script snippets...
+2026-10-23T11:25:49    Python Version: /tmp/oryx/platforms/python/3.11.17/bin/python3.11
+2026-10-23T11:25:49    Creating directory for command manifest file if it does not exist
+2026-10-23T11:25:49    Removing existing manifest file
+2026-10-23T11:25:49    Python Virtual Environment: antenv
+2026-10-23T11:25:50    Creating virtual environment...
+2026-10-23T11:25:50    Executing: /tmp/oryx/platforms/python/3.11.17/bin/python3.11 -m venv antenv --copies --system-site-packages
