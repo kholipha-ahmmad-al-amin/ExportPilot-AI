@@ -1,0 +1,198 @@
+2026-10-23T11:07:19  Fetching changes.
+2026-10-23T11:07:19    Starting  LocalZipHandler
+2026-10-23T11:07:19    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/c3b73135-2fd0-45a0-ac1a-4e0937552926.zip (5.05 MB) to /tmp/zipdeploy/extracted
+2026-10-23T11:07:24  Updating submodules.
+2026-10-23T11:07:24  Preparing deployment for commit id 'fb678f67-8'.
+2026-10-23T11:07:24  PreDeployment: context.CleanOutputPath False
+2026-10-23T11:07:25  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-10-23T11:07:25  Repository path is /tmp/zipdeploy/extracted
+2026-10-23T11:07:25  Running oryx build...
+2026-10-23T11:07:25    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.11 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8df30f5d15b201d --compress-destination-dir --dependency-resolution-output-dir '/home/site/deployments/fb678f67-8839-46ca-acaa-9402913019fd/dependency-resolution' | tee /tmp/oryx-build.log
+2026-10-23T11:07:27    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-10-23T11:07:27    You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-10-23T11:07:28    
+2026-10-23T11:07:28    Oryx Version: 0.2.20260904.4+b59c18270651a915d8674b6d8baef6adf95bae39, Commit: b59c18270651a915d8674b6d8baef6adf95bae39, ReleaseTagName: 20260904.4
+2026-10-23T11:07:28    
+2026-10-23T11:07:28    Build Operation ID: f61451e17289e27b
+2026-10-23T11:07:28    Repository Commit : fb678f67-8839-46ca-acaa-9402913019fd
+2026-10-23T11:07:28    OS Type           : bookworm
+2026-10-23T11:07:28    Image Type        : githubactions
+2026-10-23T11:07:28    
+2026-10-23T11:07:28    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-10-23T11:07:28    Backup SDK Storage URL: 
+2026-10-23T11:07:28    ACR SDK Registry URL: https://mcr.microsoft.com
+2026-10-23T11:07:28    SDK provider status:
+2026-10-23T11:07:28      External ACR SDK provider: Enabled
+2026-10-23T11:07:28      External SDK provider: Disabled
+2026-10-23T11:07:28      Direct ACR SDK provider: Enabled
+2026-10-23T11:07:28      Blob SDK provider: Disabled
+2026-10-23T11:07:28    External ACR SDK provider is enabled. Only using user-specified platform: python
+2026-10-23T11:07:28    Detecting platforms...
+2026-10-23T11:07:34    External ACR provider resolved version '3.11.17' for python.
+2026-10-23T11:07:34    Version resolved using external ACR SDK provider.
+2026-10-23T11:07:34    Detected following platforms:
+2026-10-23T11:07:34      python: 3.11.17
+2026-10-23T11:07:35    
+2026-10-23T11:07:35    Using intermediate directory '/tmp/8df30f5d15b201d'.
+2026-10-23T11:07:35    
+2026-10-23T11:07:36    Copying files to the intermediate directory...
+2026-10-23T11:07:36    Copying files to intermediate directory done in 0 sec(s).
+2026-10-23T11:07:36    
+2026-10-23T11:07:36    Source directory     : /tmp/8df30f5d15b201d
+2026-10-23T11:07:36    Destination directory: /home/site/wwwroot
+2026-10-23T11:07:36    
+2026-10-23T11:07:36    Running build script snippets...
+2026-10-23T11:07:36    Python Version: /tmp/oryx/platforms/python/3.11.17/bin/python3.11
+2026-10-23T11:07:36    Creating directory for command manifest file if it does not exist
+2026-10-23T11:07:36    Removing existing manifest file
+2026-10-23T11:07:36    Python Virtual Environment: antenv
+2026-10-23T11:07:36    Creating virtual environment...
+2026-10-23T11:07:36    Executing: /tmp/oryx/platforms/python/3.11.17/bin/python3.11 -m venv antenv --copies --system-site-packages
+2026-10-23T11:07:58    Activating virtual environment...
+2026-10-23T11:07:58    Fast build is enabled
+2026-10-23T11:07:58    Installing uv...
+2026-10-23T11:08:07    Collecting uv
+2026-10-23T11:08:07      Using cached uv-0.13.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+2026-10-23T11:08:07    Using cached uv-0.13.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.2 MB)
+2026-10-23T11:08:07    Installing collected packages: uv
+2026-10-23T11:08:09    Successfully installed uv-0.13.5
+2026-10-23T11:08:10    
+2026-10-23T11:08:10    [notice] A new release of pip is available: 24.0 -> 26.2.2
+2026-10-23T11:08:10    [notice] To update, run: pip install --upgrade pip
+2026-10-23T11:08:12    Oryx dependency resolution done in 14 sec(s).
+2026-10-23T11:08:12    Oryx dependency resolution was unavailable because uv dependency resolution failed; deployment will continue using the original Oryx installation path.
+2026-10-23T11:08:12    uv is already installed, skipping installation...
+2026-10-23T11:08:12    Running uv pip install...
+2026-10-23T11:08:12    Using preloaded wheels from: /tux-wheels
+2026-10-23T11:08:12    Using Python 3.11.17 environment at: antenv
+2026-10-23T11:08:12    error: No solution found when resolving dependencies
+2026-10-23T11:08:12      cause: Because fastmcp-slim==4.0.5 depends on pydantic[email]>=2.12.0 and fastmcp==4.0.5 depends on fastmcp-slim[client]==4.0.5, we can conclude that fastmcp==4.0.5 depends on pydantic>=2.12.0.
+2026-10-23T11:08:13             And because you require pydantic==2.9.2 and fastmcp==4.0.5, we can conclude that your requirements are unsatisfiable.
+2026-10-23T11:08:13    uv pip install done in 0 sec(s).
+2026-10-23T11:08:13    uv pip install failed with exit code 1, falling back to pip install...
+2026-10-23T11:08:13    Running pip install...
+2026-10-23T11:08:13    Using preloaded wheels from: /tux-wheels
+2026-10-23T11:08:43    [11:08:14+0000] Looking in links: /tux-wheels
+2026-10-23T11:08:43    [11:08:15+0000] Collecting fastapi==0.115.0 (from -r requirements.txt (line 1))
+2026-10-23T11:08:43    [11:08:15+0000]   Downloading fastapi-0.115.0-py3-none-any.whl.metadata (27 kB)
+2026-10-23T11:08:43    [11:08:16+0000] Collecting uvicorn==0.30.6 (from uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:43    [11:08:16+0000]   Downloading uvicorn-0.30.6-py3-none-any.whl.metadata (6.6 kB)
+2026-10-23T11:08:43    [11:08:16+0000] Collecting pydantic==2.9.2 (from -r requirements.txt (line 3))
+2026-10-23T11:08:43    [11:08:16+0000]   Downloading pydantic-2.9.2-py3-none-any.whl.metadata (149 kB)
+2026-10-23T11:08:43    [11:08:17+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.4/149.4 kB 2.7 MB/s eta 0:00:00
+2026-10-23T11:08:43    [11:08:17+0000] Collecting python-multipart==0.0.12 (from -r requirements.txt (line 4))
+2026-10-23T11:08:43    [11:08:17+0000]   Downloading python_multipart-0.0.12-py3-none-any.whl.metadata (1.9 kB)
+2026-10-23T11:08:43    [11:08:19+0000] Collecting sqlalchemy==2.0.35 (from -r requirements.txt (line 5))
+2026-10-23T11:08:43    [11:08:19+0000]   Downloading SQLAlchemy-2.0.35-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+2026-10-23T11:08:43    [11:08:19+0000] Collecting bcrypt>=4.0.0 (from -r requirements.txt (line 6))
+2026-10-23T11:08:43    [11:08:19+0000]   Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
+2026-10-23T11:08:43    [11:08:19+0000] Collecting pyjwt==2.9.0 (from -r requirements.txt (line 7))
+2026-10-23T11:08:43    [11:08:19+0000]   Downloading PyJWT-2.9.0-py3-none-any.whl.metadata (3.0 kB)
+2026-10-23T11:08:43    [11:08:20+0000] Collecting httpx==0.27.2 (from -r requirements.txt (line 8))
+2026-10-23T11:08:43    [11:08:20+0000]   Downloading httpx-0.27.2-py3-none-any.whl.metadata (7.1 kB)
+2026-10-23T11:08:43    [11:08:20+0000] Collecting pymupdf==1.24.10 (from -r requirements.txt (line 9))
+2026-10-23T11:08:43    [11:08:21+0000]   Downloading PyMuPDF-1.24.10-cp311-none-manylinux2014_x86_64.whl.metadata (3.4 kB)
+2026-10-23T11:08:43    [11:08:21+0000] Collecting pdfplumber==0.11.4 (from -r requirements.txt (line 10))
+2026-10-23T11:08:44    [11:08:21+0000]   Downloading pdfplumber-0.11.4-py3-none-any.whl.metadata (41 kB)
+2026-10-23T11:08:44    [11:08:21+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.0/42.0 kB 10.6 MB/s eta 0:00:00
+2026-10-23T11:08:44    [11:08:21+0000] Collecting pypdf==5.0.0 (from -r requirements.txt (line 11))
+2026-10-23T11:08:44    [11:08:21+0000]   Downloading pypdf-5.0.0-py3-none-any.whl.metadata (7.4 kB)
+2026-10-23T11:08:44    [11:08:22+0000] Collecting reportlab==4.2.2 (from -r requirements.txt (line 12))
+2026-10-23T11:08:44    [11:08:22+0000]   Downloading reportlab-4.2.2-py3-none-any.whl.metadata (1.4 kB)
+2026-10-23T11:08:44    [11:08:23+0000] Collecting pillow==10.4.0 (from -r requirements.txt (line 13))
+2026-10-23T11:08:44    [11:08:23+0000]   Downloading pillow-10.4.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (9.2 kB)
+2026-10-23T11:08:44    [11:08:23+0000] Collecting networkx==3.3 (from -r requirements.txt (line 14))
+2026-10-23T11:08:44    [11:08:23+0000]   Downloading networkx-3.3-py3-none-any.whl.metadata (5.1 kB)
+2026-10-23T11:08:44    [11:08:23+0000] Collecting fastmcp==4.0.5 (from -r requirements.txt (line 15))
+2026-10-23T11:08:44    [11:08:23+0000]   Downloading fastmcp-4.0.5-py3-none-any.whl.metadata (8.9 kB)
+2026-10-23T11:08:44    [11:08:24+0000] Collecting jinja2==3.1.4 (from -r requirements.txt (line 16))
+2026-10-23T11:08:44    [11:08:24+0000]   Downloading jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+2026-10-23T11:08:44    [11:08:24+0000] Collecting sse-starlette==2.1.3 (from -r requirements.txt (line 17))
+2026-10-23T11:08:44    [11:08:24+0000]   Downloading sse_starlette-2.1.3-py3-none-any.whl.metadata (5.8 kB)
+2026-10-23T11:08:44    [11:08:24+0000] Collecting starlette<0.39.0,>=0.37.2 (from fastapi==0.115.0->-r requirements.txt (line 1))
+2026-10-23T11:08:44    [11:08:24+0000]   Downloading starlette-0.38.6-py3-none-any.whl.metadata (6.0 kB)
+2026-10-23T11:08:44    [11:08:25+0000] Collecting typing-extensions>=4.8.0 (from fastapi==0.115.0->-r requirements.txt (line 1))
+2026-10-23T11:08:44    [11:08:25+0000]   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-10-23T11:08:44    [11:08:25+0000] Collecting click>=7.0 (from uvicorn==0.30.6->uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:44    [11:08:25+0000]   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+2026-10-23T11:08:44    [11:08:25+0000] Collecting h11>=0.8 (from uvicorn==0.30.6->uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:44    [11:08:25+0000]   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-10-23T11:08:44    [11:08:25+0000] Collecting annotated-types>=0.6.0 (from pydantic==2.9.2->-r requirements.txt (line 3))
+2026-10-23T11:08:44    [11:08:25+0000]   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-10-23T11:08:44    [11:08:29+0000] Collecting pydantic-core==2.23.4 (from pydantic==2.9.2->-r requirements.txt (line 3))
+2026-10-23T11:08:44    [11:08:29+0000]   Downloading pydantic_core-2.23.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+2026-10-23T11:08:44    [11:08:31+0000] Collecting greenlet!=0.4.17 (from sqlalchemy==2.0.35->-r requirements.txt (line 5))
+2026-10-23T11:08:44    [11:08:31+0000]   Downloading greenlet-3.5.6-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-10-23T11:08:44    [11:08:31+0000] Collecting anyio (from httpx==0.27.2->-r requirements.txt (line 8))
+2026-10-23T11:08:44    [11:08:31+0000]   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+2026-10-23T11:08:44    [11:08:31+0000] Collecting certifi (from httpx==0.27.2->-r requirements.txt (line 8))
+2026-10-23T11:08:44    [11:08:32+0000]   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+2026-10-23T11:08:44    [11:08:32+0000] Collecting httpcore==1.* (from httpx==0.27.2->-r requirements.txt (line 8))
+2026-10-23T11:08:44    [11:08:32+0000]   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2026-10-23T11:08:44    [11:08:32+0000] Collecting idna (from httpx==0.27.2->-r requirements.txt (line 8))
+2026-10-23T11:08:44    [11:08:32+0000]   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+2026-10-23T11:08:44    [11:08:32+0000] Collecting sniffio (from httpx==0.27.2->-r requirements.txt (line 8))
+2026-10-23T11:08:44    [11:08:32+0000]   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2026-10-23T11:08:44    [11:08:32+0000] Collecting PyMuPDFb==1.24.10 (from pymupdf==1.24.10->-r requirements.txt (line 9))
+2026-10-23T11:08:44    [11:08:32+0000]   Downloading PyMuPDFb-1.24.10-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.4 kB)
+2026-10-23T11:08:44    [11:08:32+0000] Collecting pdfminer.six==20231228 (from pdfplumber==0.11.4->-r requirements.txt (line 10))
+2026-10-23T11:08:44    [11:08:32+0000]   Downloading pdfminer.six-20231228-py3-none-any.whl.metadata (4.2 kB)
+2026-10-23T11:08:44    [11:08:33+0000] Collecting pypdfium2>=4.18.0 (from pdfplumber==0.11.4->-r requirements.txt (line 10))
+2026-10-23T11:08:44    [11:08:33+0000]   Downloading pypdfium2-5.14.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+2026-10-23T11:08:44    [11:08:33+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.4/62.4 kB 4.6 MB/s eta 0:00:00
+2026-10-23T11:08:44    [11:08:34+0000] Collecting chardet (from reportlab==4.2.2->-r requirements.txt (line 12))
+2026-10-23T11:08:44    [11:08:34+0000]   Downloading chardet-7.7.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+2026-10-23T11:08:44    [11:08:34+0000] Collecting fastmcp-slim==4.0.5 (from fastmcp-slim[client,server]==4.0.5->fastmcp==4.0.5->-r requirements.txt (line 15))
+2026-10-23T11:08:45    [11:08:34+0000]   Downloading fastmcp_slim-4.0.5-py3-none-any.whl.metadata (10 kB)
+2026-10-23T11:08:45    [11:08:34+0000] Collecting MarkupSafe>=2.0 (from jinja2==3.1.4->-r requirements.txt (line 16))
+2026-10-23T11:08:45    [11:08:34+0000]   Downloading markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+2026-10-23T11:08:45    [11:08:35+0000] Collecting httptools>=0.5.0 (from uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:45    [11:08:35+0000]   Downloading httptools-0.9.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+2026-10-23T11:08:45    [11:08:35+0000] Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:45    [11:08:35+0000]   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+2026-10-23T11:08:45    [11:08:35+0000] Collecting pyyaml>=5.1 (from uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:45    [11:08:35+0000]   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-10-23T11:08:45    [11:08:35+0000] Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:45    [11:08:36+0000]   Downloading uvloop-0.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+2026-10-23T11:08:45    [11:08:36+0000] Collecting watchfiles>=0.13 (from uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:45    [11:08:36+0000]   Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+2026-10-23T11:08:45    [11:08:37+0000] Collecting websockets>=10.4 (from uvicorn[standard]==0.30.6->-r requirements.txt (line 2))
+2026-10-23T11:08:45    [11:08:37+0000]   Downloading websockets-17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+2026-10-23T11:08:45    [11:08:38+0000] Collecting mcp-types<3.0.0,>=2.0.0 (from fastmcp-slim==4.0.5->fastmcp-slim[client,server]==4.0.5->fastmcp==4.0.5->-r requirements.txt (line 15))
+2026-10-23T11:08:45    [11:08:38+0000]   Downloading mcp_types-2.3.0-py3-none-any.whl.metadata (1.9 kB)
+2026-10-23T11:08:45    [11:08:38+0000] Collecting platformdirs>=4.0.0 (from fastmcp-slim==4.0.5->fastmcp-slim[client,server]==4.0.5->fastmcp==4.0.5->-r requirements.txt (line 15))
+2026-10-23T11:08:45    [11:08:38+0000]   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+2026-10-23T11:08:45    [11:08:38+0000] Collecting pydantic-settings>=2.0.0 (from fastmcp-slim==4.0.5->fastmcp-slim[client,server]==4.0.5->fastmcp==4.0.5->-r requirements.txt (line 15))
+2026-10-23T11:08:45    [11:08:38+0000]   Downloading pydantic_settings-2.16.1-py3-none-any.whl.metadata (4.0 kB)
+2026-10-23T11:08:45    [11:08:38+0000] INFO: pip is looking at multiple versions of fastmcp-slim to determine which version is compatible with other requirements. This could take a while.
+2026-10-23T11:08:45    ERROR: Cannot install -r requirements.txt (line 1), fastmcp-slim and pydantic==2.9.2 because these package versions have conflicting dependencies.
+2026-10-23T11:08:45    [11:08:39+0000] 
+2026-10-23T11:08:45    [11:08:39+0000] The conflict is caused by:
+2026-10-23T11:08:45    [11:08:39+0000]     The user requested pydantic==2.9.2
+2026-10-23T11:08:45    [11:08:39+0000]     fastapi 0.115.0 depends on pydantic!=1.8, !=1.8.1, !=2.0.0, !=2.0.1, !=2.1.0, <3.0.0 and >=1.7.4
+2026-10-23T11:08:45    [11:08:39+0000]     fastmcp-slim 4.0.5 depends on pydantic>=2.12.0
+2026-10-23T11:08:45    [11:08:39+0000] 
+2026-10-23T11:08:45    [11:08:39+0000] To fix this you could try to:
+2026-10-23T11:08:45    [11:08:39+0000] 1. loosen the range of package versions you've specified
+2026-10-23T11:08:45    [11:08:39+0000] 2. remove package versions to allow pip attempt to solve the dependency conflict
+2026-10-23T11:08:45    [11:08:39+0000] 
+2026-10-23T11:08:45    ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+2026-10-23T11:08:45    
+2026-10-23T11:08:45    [notice] A new release of pip is available: 24.0 -> 26.2.2
+2026-10-23T11:08:45    [notice] To update, run: pip install --upgrade pip
+2026-10-23T11:08:45    pip install done in 31 sec(s).
+2026-10-23T11:08:45    [notice] A new release of pip is available: 24.0 -> 26.2.2
+[notice] To update, run: pip install --upgrade pip
+/bin/bash -c "oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.11 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8df30f5d15b201d --compress-destination-dir --dependency-resolution-output-dir '/home/site/deployments/fb678f67-8839-46ca-acaa-9402913019fd/dependency-resolution' | tee /tmp/oryx-build.log ; exit $PIPESTATUS "
+2026-10-23T11:08:45  
+2026-10-23T11:08:46  
+2026-10-23T11:08:46  Generating summary of Oryx build
+2026-10-23T11:08:46  Parsing the build logs
+2026-10-23T11:08:46  Found 0 issue(s)
+2026-10-23T11:08:46  
+2026-10-23T11:08:46  Build Summary :
+2026-10-23T11:08:47  ===============
+2026-10-23T11:08:47  Errors (0)
+2026-10-23T11:08:47  Warnings (0)
+2026-10-23T11:08:47  
+2026-10-23T11:08:48  Deployment Failed. deployer = OneDeploy deploymentPath = OneDeploy
