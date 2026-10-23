@@ -1,0 +1,5 @@
+<step title="Incoming Request" date="2026-10-21T11:12:56.766" instance="91ef9b" url="/logstream/default" method="GET" type="request" pid="889,1,22" Host="exportpilot-bd-2026.scm.azurewebsites.net" User-Agent="AZURECLI/2.91.0 (MSI)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="533aa5a8-cd40-11f1-8aaa-047f0e41aa3a" X-ARR-LOG-ID="533aa5a8-cd40-11f1-8aaa-047f0e41aa3a" CLIENT-IP="103.238.114.222:3241" X-SITE-DEPLOYMENT-ID="exportpilot-bd-2026" WAS-DEFAULT-HOSTNAME="exportpilot-bd-2026.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/logstream/default" X-Client-IP="103.238.114.222" X-Client-Port="3241" >
+  <step title="LogStreamHandlerMiddleware.Invoke" date="2026-10-21T11:12:56.943" /><!-- duration: 227ms -->
+  <step title="Error occurred" date="2026-10-21T11:13:57.172" type="error" text="LogStreamManager: ProcessRequest end" /><!-- duration: 21ms -->
+  <step title="Outgoing response" date="2026-10-21T11:13:57.225" type="response" statusCode="200" statusText="OK" /><!-- duration: 13ms -->
+</step><!-- duration: 60480ms -->
