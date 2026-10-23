@@ -1,0 +1,63 @@
+2026-10-21T11:37:54  Fetching changes.
+2026-10-21T11:37:54    Starting  LocalZipHandler
+2026-10-21T11:37:54    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/36b66a07-9723-46ee-996a-bdf5c628ada9.zip (0.60 MB) to /tmp/zipdeploy/extracted
+2026-10-21T11:37:58  Updating submodules.
+2026-10-21T11:37:58  Preparing deployment for commit id 'e821b156-c'.
+2026-10-21T11:37:59  PreDeployment: context.CleanOutputPath False
+2026-10-21T11:37:59  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-10-21T11:37:59  Repository path is /tmp/zipdeploy/extracted
+2026-10-21T11:38:00  Running oryx build...
+2026-10-21T11:38:00    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.11 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8df2f67c1fe395c --compress-destination-dir --dependency-resolution-output-dir '/home/site/deployments/e821b156-c5c1-4318-8463-dbe42e2b4595/dependency-resolution' | tee /tmp/oryx-build.log
+2026-10-21T11:38:05    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-10-21T11:38:05    You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-10-21T11:38:05    
+2026-10-21T11:38:05    Oryx Version: 0.2.20260904.4+b59c18270651a915d8674b6d8baef6adf95bae39, Commit: b59c18270651a915d8674b6d8baef6adf95bae39, ReleaseTagName: 20260904.4
+2026-10-21T11:38:05    
+2026-10-21T11:38:05    Build Operation ID: 39cc1e970524f3bf
+2026-10-21T11:38:05    Repository Commit : e821b156-c5c1-4318-8463-dbe42e2b4595
+2026-10-21T11:38:05    OS Type           : bookworm
+2026-10-21T11:38:05    Image Type        : githubactions
+2026-10-21T11:38:05    
+2026-10-21T11:38:05    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-10-21T11:38:05    Backup SDK Storage URL: 
+2026-10-21T11:38:05    ACR SDK Registry URL: https://mcr.microsoft.com
+2026-10-21T11:38:05    SDK provider status:
+2026-10-21T11:38:05      External ACR SDK provider: Enabled
+2026-10-21T11:38:05      External SDK provider: Disabled
+2026-10-21T11:38:05      Direct ACR SDK provider: Enabled
+2026-10-21T11:38:05      Blob SDK provider: Disabled
+2026-10-21T11:38:05    External ACR SDK provider is enabled. Only using user-specified platform: python
+2026-10-21T11:38:05    Detecting platforms...
+2026-10-21T11:38:17    External ACR provider resolved version '3.11.17' for python.
+2026-10-21T11:38:17    Version resolved using external ACR SDK provider.
+2026-10-21T11:38:17    Detected following platforms:
+2026-10-21T11:38:18      python: 3.11.17
+2026-10-21T11:38:18    Requesting SDK from ACR via external provider: python 3.11.17 (bookworm)
+2026-10-21T11:38:22    Successfully pulled SDK from ACR via external provider: python 3.11.17
+2026-10-21T11:38:22    SDK for 'python' version '3.11.17' fetched via external ACR provider.
+2026-10-21T11:38:22    Version '3.11.17' of platform 'python' is not installed. Generating script to install it...
+2026-10-21T11:38:23    
+2026-10-21T11:38:24    Using intermediate directory '/tmp/8df2f67c1fe395c'.
+2026-10-21T11:38:24    
+2026-10-21T11:38:24    Copying files to the intermediate directory...
+2026-10-21T11:38:25    Copying files to intermediate directory done in 1 sec(s).
+2026-10-21T11:38:25    
+2026-10-21T11:38:25    Source directory     : /tmp/8df2f67c1fe395c
+2026-10-21T11:38:25    Destination directory: /home/site/wwwroot
+2026-10-21T11:38:26    
+2026-10-21T11:38:26    Installing platform...
+2026-10-21T11:38:26    
+2026-10-21T11:38:26    Downloading and extracting 'python' version '3.11.17' to '/tmp/oryx/platforms/python/3.11.17'...
+2026-10-21T11:38:26    Detected image debian flavor: bookworm.
+2026-10-21T11:38:26    SDK binary download was skipped. Looking for cached tarball...
+2026-10-21T11:38:26    Found tarball at /var/OryxAcrSdks/python/python-bookworm-3.11.17.tar.gz
+2026-10-21T11:39:35    Successfully extracted python version 3.11.17 from cached tarball.
+2026-10-21T11:39:35    
+2026-10-21T11:39:35    Platform installation done in 70 sec(s).
+2026-10-21T11:39:36    Running build script snippets...
+2026-10-21T11:39:36    Python Version: /tmp/oryx/platforms/python/3.11.17/bin/python3.11
+2026-10-21T11:39:36    Creating directory for command manifest file if it does not exist
+2026-10-21T11:39:37    Removing existing manifest file
+2026-10-21T11:39:37    Python Virtual Environment: antenv
+2026-10-21T11:39:37    Creating virtual environment...
+2026-10-21T11:39:37    Executing: /tmp/oryx/platforms/python/3.11.17/bin/python3.11 -m venv antenv --copies --system-site-packages
