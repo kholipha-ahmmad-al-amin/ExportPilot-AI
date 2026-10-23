@@ -1,0 +1,40 @@
+<step title="Incoming Request" date="2026-10-21T11:37:51.445" instance="956969" url="/api/publish?type=zip" method="POST" type="request" pid="891,1,5" Accept="*/*" Host="exportpilot-bd-2026.scm.azurewebsites.net" User-Agent="AZURECLI/2.91.0 (MSI)" Accept-Encoding="gzip, deflate, zstd" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Content-Length="625014" x-ms-client-request-id="b223ce70-cd43-11f1-8dd0-047f0e41aa3a" x-ms-artifact-checksum="42ecbefa1b191ea247541c3722798e5de435393288cb4db5602b0e4729fd0c04" X-ARR-LOG-ID="b223ce70-cd43-11f1-8dd0-047f0e41aa3a" CLIENT-IP="103.238.114.222:11016" X-SITE-DEPLOYMENT-ID="exportpilot-bd-2026" WAS-DEFAULT-HOSTNAME="exportpilot-bd-2026.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?type=zip" X-Client-IP="103.238.114.222" X-Client-Port="11016" >
+  <step title="OneDeploy" date="2026-10-21T11:37:52.180" >
+    <step title="None repository commit" date="2026-10-21T11:37:52.191" >
+      <step title="Commit id: e821b156-c5c1-4318-8463-dbe42e2b4595" date="2026-10-21T11:37:52.196" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 5ms -->
+    </step><!-- duration: 13ms -->
+    <step title="Starting PushDeployAsync" date="2026-10-21T11:37:52.207" /><!-- duration: 3ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/36b66a07-9723-46ee-996a-bdf5c628ada9.zip" date="2026-10-21T11:37:52.221" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/36b66a07-9723-46ee-996a-bdf5c628ada9.zip" date="2026-10-21T11:37:52.225" /><!-- duration: 3ms -->
+      <step title="Writing zip file to /tmp/zipdeploy/36b66a07-9723-46ee-996a-bdf5c628ada9.zip" date="2026-10-21T11:37:52.232" /><!-- duration: 29ms -->
+    </step><!-- duration: 90ms -->
+    <step title="Removing previous build artifact&apos;s manifest file" date="2026-10-21T11:37:52.317" >
+      <step title="Attempting to fetch target branch HEAD" date="2026-10-21T11:37:52.329" /><!-- duration: 3ms -->
+      <step title="Acquiring Deployment Lock" date="2026-10-21T11:37:52.337" /><!-- duration: 3ms -->
+      <step title="Acquired Deployment Lock" date="2026-10-21T11:37:52.402" /><!-- duration: 31ms -->
+      <step title="Performing fetch based deployment" date="2026-10-21T11:37:52.502" >
+        <step title="Creating temporary deployment" date="2026-10-21T11:37:52.513" /><!-- duration: 172ms -->
+        <step title="Releasing Deployment Lock" date="2026-10-21T11:37:54.223" /><!-- duration: 28ms -->
+        <step title="Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/36b66a07-9723-46ee-996a-bdf5c628ada9.zip (0.60 MB) to /tmp/zipdeploy/extracted" date="2026-10-21T11:37:54.383" >
+          <step title="ChmodRecursive Process exited with total time taken in ms: 101" date="2026-10-21T11:37:55.268" /><!-- duration: 31ms -->
+        </step><!-- duration: 924ms -->
+        <step title="None repository commit" date="2026-10-21T11:37:55.312" >
+          <step title="Commit id: e821b156-c5c1-4318-8463-dbe42e2b4595" date="2026-10-21T11:37:55.316" Message="OneDeploy" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 3ms -->
+        </step><!-- duration: 14ms -->
+        <step title="Deployment timer started" date="2026-10-21T11:37:57.333" >
+          <step title="DeploymentManager.Deploy(id:e821b156-c5c1-4318-8463-dbe42e2b4595)" date="2026-10-21T11:37:57.340" >
+            <step title="Collecting changeset information" date="2026-10-21T11:37:57.373" /><!-- duration: 82ms -->
+            <step title="Updating submodules" date="2026-10-21T11:37:57.461" /><!-- duration: 1224ms -->
+            <step title="Determining deployment builder" date="2026-10-21T11:37:59.181" >
+              <step title="Builder is OryxBuilder" date="2026-10-21T11:37:59.220" /><!-- duration: 10ms -->
+            </step><!-- duration: 78ms -->
+            <step title="PreDeployment: context.CleanOutputPath False" date="2026-10-21T11:37:59.359" >
+              <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2026-10-21T11:37:59.612" >
+                <step title="Building" date="2026-10-21T11:37:59.762" >
+                  <step title="Executing external process" date="2026-10-21T11:38:00.127" type="process" path="bash" arguments="-c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.11 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8df2f67c1fe395c --compress-destination-dir --dependency-resolution-output-dir &apos;/home/site/deployments/e821b156-c5c1-4318-8463-dbe42e2b4595/dependency-resolution&apos; | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" >
+                    <step title="Cpu: gzip(954,7.270s)+tar(953,2.630s)+build.sh(941,0.010s)+oryx(916,7.290s)+tee(917,0.010s)+bash(915,0.000s)=total(17.190s)" date="2026-10-21T11:39:27.621" /><!-- duration: 52ms -->
+                    <step title="bash: no io activity for 60s, prev-cpu=-1.000s, current-cpu=17.190s" date="2026-10-21T11:39:27.803" /><!-- duration: 344ms -->
+                    <step title="Cpu: python3.11(1046,6.200s)+python3.11(1045,0.250s)+python3.11(1040,0.190s)+build.sh(941,0.060s)+oryx(916,7.950s)+tee(917,0.010s)+bash(915,0.000s)=total(14.650s)" date="2026-10-21T11:40:38.440" /><!-- duration: 242ms -->
+                    <step title="bash: no io activity for 60s, prev-cpu=-1.000s, current-cpu=14.650s" date="2026-10-21T11:40:38.693" /><!-- duration: 50ms -->
+                    <step title="Cpu: python3.11(1046,8.160s)+python3.11(1045,0.250s)+python3.11(1040,0.190s)+build.sh(941,0.060s)+oryx(916,8.260s)+tee(917,0.010s)+bash(915,0.000s)=total(16.930s)" date="2026-10-21T11:41:40.086" /><!-- duration: 40ms -->
+                    <step title="bash: no io activity for 123s, prev-cpu=14.650s, current-cpu=16.930s" date="2026-10-21T11:41:40.227" /><!-- duration: 229ms -->

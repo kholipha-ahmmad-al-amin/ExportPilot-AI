@@ -1,0 +1,8 @@
+<step title="Incoming Request" date="2026-10-21T19:02:27.857" instance="956969" url="/api/deployments/latest" method="GET" type="request" pid="893,1,17" Accept="*/*" Host="exportpilot-bd-2026.scm.azurewebsites.net" User-Agent="AZURECLI/2.91.0 (MSI)" Accept-Encoding="gzip, deflate, zstd" Authorization="Bea..." x-ms-client-request-id="e8d7f324-cd81-11f1-a0dc-047f0e41aa3a" X-ARR-LOG-ID="e8d7f324-cd81-11f1-a0dc-047f0e41aa3a" CLIENT-IP="103.238.114.222:12643" X-SITE-DEPLOYMENT-ID="exportpilot-bd-2026" WAS-DEFAULT-HOSTNAME="exportpilot-bd-2026.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/latest" X-Client-IP="103.238.114.222" X-Client-Port="12643" >
+  <step title="DeploymentService.GetResult" date="2026-10-21T19:02:27.906" >
+    <step title="DeploymentService.GetLatestDeployment" date="2026-10-21T19:02:27.909" >
+      <step title="DeploymentManager.GetResults" date="2026-10-21T19:02:27.913" /><!-- duration: 518ms -->
+    </step><!-- duration: 526ms -->
+  </step><!-- duration: 533ms -->
+  <step title="Outgoing response" date="2026-10-21T19:02:28.443" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 4ms -->
+</step><!-- duration: 593ms -->
