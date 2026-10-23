@@ -1,0 +1,62 @@
+# Sensitive Documentation (Internal Sovereign Specs - Not for GitHub)
+docs/
+docs
+
+# Environment & Secret Credentials
+.env
+.env.*
+*.env
+credentials.json
+client_secret*.json
+*.pem
+*.key
+
+# Database & Runtime Artifacts
+exportpilot.db
+exportpilot.db-wal
+exportpilot.db-shm
+*.db
+*.sqlite
+*.sqlite3
+
+# Deployment Archives
+deploy.zip
+*.zip
+*.tar
+*.gz
+
+# Python Environment & Bytecode
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend Build Caches
+node_modules/
+frontend/node_modules/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+
+# System & OS Files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Tooling Metadata
+.system_generated/
+.gemini/
+.vscode/
+.idea/
+.commandcode/
+.freebuff/
+azure_logs.zip
+azure_logs/
