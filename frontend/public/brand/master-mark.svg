@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ExportPilot AI master mark">
-  <!--
-    ExportPilot AI master brand mark.
-    Concept: a container face with three corrugation ribs in negative space
-    beneath a bold upward arrow: cargo moving up and out, direct export uplift.
-    Fixed colors so every favicon render is identical; the in-app BrandLogo
-    inlines this geometry with theme-adaptive fills.
-  -->
-  <rect x="32" y="32" width="448" height="448" rx="96" fill="#047857"/>
-  <!-- Upward arrow: head triangle plus square shaft, pure negative space -->
-  <path d="M256 128 L332 236 L284 236 L284 332 L228 332 L228 236 L180 236 Z" fill="#FFFFFF"/>
-  <!-- Container corrugation ribs -->
-  <rect x="164" y="360" width="184" height="26" rx="6" fill="#FFFFFF"/>
-  <rect x="164" y="402" width="184" height="26" rx="6" fill="#FFFFFF"/>
-  <rect x="164" y="444" width="184" height="26" rx="6" fill="#FFFFFF"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" aria-label="ExportPilot AI master mark" role="img" viewBox="0 0 512 512"><rect width="448" height="448" x="32" y="32" fill="#047857" rx="96"/><path fill="#FFF" d="M256 128 L332 236 L284 236 L284 332 L228 332 L228 236 L180 236 Z"/><rect width="184" height="26" x="164" y="360" fill="#FFF" rx="6"/><rect width="184" height="26" x="164" y="402" fill="#FFF" rx="6"/><rect width="184" height="26" x="164" y="444" fill="#FFF" rx="6"/></svg>
