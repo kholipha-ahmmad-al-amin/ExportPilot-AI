@@ -1,0 +1,35 @@
+# ExportPilot AI
+
+> ExportPilot AI helps Bangladeshi manufacturers review HS codes, buyer requirements, carbon data, and export documents in one workspace.
+
+Canonical site: https://exportpilot.equisaas-bd.com/
+Languages: Bangla and English.
+Audience: Bangladesh-based manufacturers and export teams.
+Business area: product classification research, buyer requirement review, estimated Scope 2 emissions, and draft export document preparation.
+Primary action: create an account to prepare product and shipment information.
+
+## Public pages
+- [Direct Export Tools for Bangladesh Manufacturers](https://exportpilot.equisaas-bd.com/): Review HS codes, buyer requirements, carbon data, and export documents in one workspace for Bangladesh manufacturers.
+- [About ExportPilot AI](https://exportpilot.equisaas-bd.com/about): Learn how ExportPilot AI supports direct export preparation for small and mid-sized manufacturers in Bangladesh.
+- [Export Preparation Guide](https://exportpilot.equisaas-bd.com/docs): Guidance for product details, buyer requirements, tariff review, carbon estimates, and export documents.
+- [Buyer Requirement Review for Exporters](https://exportpilot.equisaas-bd.com/features/buyer-matching): Compare buyer requirements, order quantities, destinations, and payment terms during export preparation.
+- [Scope 2 Carbon Estimate for Export Preparation](https://exportpilot.equisaas-bd.com/features/cbam-audit): Use electricity consumption information to prepare an estimated Scope 2 carbon intensity for review.
+- [Export Document Preparation](https://exportpilot.equisaas-bd.com/features/export-documents): Prepare draft proforma invoice and deal documents for review by exporters and buyers.
+- [HS Code Classification for Export Products](https://exportpilot.equisaas-bd.com/features/hs-classification): Organize product specifications for HS code research and review the proposed classification before export.
+- [Export Preparation for Manufacturers in Bogura](https://exportpilot.equisaas-bd.com/locations/bogura): Export workflow guidance for ceramics, agro-processing, and other manufacturers in Bogura.
+- [Export Preparation for Manufacturers in Chattogram](https://exportpilot.equisaas-bd.com/locations/chattogram): Export preparation guidance for manufacturers and shipping teams in Chattogram.
+- [Export Preparation for Manufacturers in Gazipur](https://exportpilot.equisaas-bd.com/locations/gazipur): Export workflow guidance for garments and other manufacturers in Gazipur, Bangladesh.
+- [Export Preparation for Manufacturers in Savar](https://exportpilot.equisaas-bd.com/locations/savar): Product classification, buyer review, carbon estimates, and export document preparation for manufacturers in Savar.
+- [ExportPilot AI Trade Platform Brief](https://exportpilot.equisaas-bd.com/pitchdeck): An overview of the ExportPilot AI trade platform, its users, and export preparation workflow.
+- [ExportPilot AI Platform Overview](https://exportpilot.equisaas-bd.com/presentation): A concise overview of ExportPilot AI tools for Bangladesh manufacturers and export teams.
+- [Privacy Policy](https://exportpilot.equisaas-bd.com/privacy): Read how ExportPilot AI handles account, business, and product information.
+- [Agro-Processing Export Preparation](https://exportpilot.equisaas-bd.com/sectors/agro-processing): Review product specifications, market requirements, and export document needs for processed goods.
+- [Ceramics Export Preparation](https://exportpilot.equisaas-bd.com/sectors/ceramics): Prepare ceramic product details and review classification, buyer, and shipment requirements.
+- [Garment Export Preparation](https://exportpilot.equisaas-bd.com/sectors/garments): Review garment product details, HS classification, buyer requirements, and export documents.
+- [Jute Product Export Preparation](https://exportpilot.equisaas-bd.com/sectors/jute): Prepare jute product information and review buyer, tariff, and shipment requirements.
+- [Leather Export Preparation](https://exportpilot.equisaas-bd.com/sectors/leather): Review leather product specifications, classification, buyer terms, and destination requirements.
+- [Terms of Service](https://exportpilot.equisaas-bd.com/terms): Review the terms for using ExportPilot AI trade preparation and document tools.
+
+## Accuracy notes
+Tariff eligibility, rules of origin, customs classification, carbon reporting methods, and contract terms require confirmation with the relevant authorities and counterparties.
+Buyer and product examples shown in the interface may be illustrative. Verify identity, capacity, product specifications, and commercial terms independently.
