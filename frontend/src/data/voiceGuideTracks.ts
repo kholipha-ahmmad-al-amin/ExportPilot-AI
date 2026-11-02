@@ -1,0 +1,160 @@
+/**
+ * ExportPilot AI - Sovereign Voice Guide Manifest
+ * Provides high-fidelity bilingual audio tour tracks for key app routes.
+ */
+
+export interface VoiceGuideTrack {
+  id: string;
+  key: string;
+  routeTrigger: string;
+  category: 'onboarding' | 'overview' | 'logistics' | 'finance' | 'negotiation' | 'execution' | 'market' | 'compliance' | 'privacy';
+  titleBn: string;
+  titleEn: string;
+  textBn: string;
+  textEn: string;
+  audioUrlBn: string;
+  audioUrlEn: string;
+}
+
+export const VOICE_GUIDE_TRACKS: Record<string, VoiceGuideTrack> = {
+  "login": {
+    id: "guide_login",
+    key: "login",
+    routeTrigger: "/login",
+    category: "onboarding",
+    titleBn: "লগইন নির্দেশিকা",
+    titleEn: "Sign In Guide",
+    textBn: "এক্সপোর্টপাইলট অ্যাকাউন্টে সাইন ইন করতে আপনার নিবন্ধিত ইমেইল ঠিকানা এবং পাসওয়ার্ড লিখুন। এরপর সাইন ইন বাটনে চাপ দিন। আপনার যদি এখনো কোনো অ্যাকাউন্ট না থাকে, তবে নিচের লিংকে ক্লিক করে নতুন অ্যাকাউন্ট তৈরি করতে পারেন।",
+    textEn: "To sign in to your ExportPilot account, enter your registered email address and password, then click Sign In. If you do not have an account yet, click the link below to create one.",
+    audioUrlBn: "/audio/voice-guide/login_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/login_en.mp3",
+  },
+  "register": {
+    id: "guide_register",
+    key: "register",
+    routeTrigger: "/register",
+    category: "onboarding",
+    titleBn: "কারখানা অ্যাকাউন্ট নিবন্ধন",
+    titleEn: "Factory Account Registration",
+    textBn: "কারখানা অ্যাকাউন্ট তৈরি করতে আপনার নাম, ইমেইল ঠিকানা, পাসওয়ার্ড এবং আপনার কারখানার নাম লিখুন। এরপর 'রেজিস্ট্রেশন সম্পন্ন করুন' বাটনে চাপ দিন।",
+    textEn: "To create your factory account, enter your full name, email address, password, and your factory name. Then click Complete Registration.",
+    audioUrlBn: "/audio/voice-guide/register_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/register_en.mp3",
+  },
+  "landing_hero": {
+    id: "guide_landing_hero",
+    key: "landing_hero",
+    routeTrigger: "/",
+    category: "overview",
+    titleBn: "এক্সপোর্টপাইলট এআই পরিচিতি",
+    titleEn: "Welcome to ExportPilot AI",
+    textBn: "সাভার, গাজীপুর, বগুড়া ও চট্টগ্রামসহ বাংলাদেশের সকল উৎপাদনকারী কারখানার জন্য এক্সপোর্টপাইলট এআই একটি আধুনিক ডিজিটাল বাণিজ্য প্ল্যাটফর্ম। মধ্যস্বত্বভোগী বা বায়িং হাউজের কমিশন ছাড়াই আপনি সরাসরি আন্তর্জাতিক আমদানিকারকদের কাছে পণ্য রপ্তানি করতে পারবেন। এইচএস কোড যাচাই, আন্তর্জাতিক কমপ্লায়েন্স এবং স্বয়ংক্রিয় রপ্তানি নথি প্রস্তুত করতে আমাদের সিস্টেম সার্বক্ষণিক সহায়তা করবে।",
+    textEn: "ExportPilot AI is Bangladesh's sovereign trade facilitation platform, engineered for manufacturers across Savar, Gazipur, Bogura, and Chattogram. Bypass middleman spreads and connect directly with verified international buyers. Our automated intelligence verifies tariff classifications, audits compliance benchmarks, and prepares export-ready commercial invoices in minutes.",
+    audioUrlBn: "/audio/voice-guide/landing_hero_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/landing_hero_en.mp3",
+  },
+  "corridors": {
+    id: "guide_corridors",
+    key: "corridors",
+    routeTrigger: "/#corridor",
+    category: "logistics",
+    titleBn: "মেরিটাইম শিপিং করিডোর গাইড",
+    titleEn: "Maritime Shipping Corridors Guide",
+    textBn: "এই ইন্টারেক্টিভ থ্রিডি গ্লোবটিতে চট্টগ্রাম বন্দরকে মূল কেন্দ্র হিসেবে বিশ্বের চারটি প্রধান সমুদ্র শিপিং রুট তুলে ধরা হয়েছে। সুয়েজ খাল হয়ে ইউরোপীয় ইউনিয়নে ২২ দিনে এবং যুক্তরাজ্যে ২৪ দিনে পণ্য পৌঁছানো সম্ভব, যেখানে বাংলাদেশ শতভাগ শুল্কমুক্ত সুবিধা পায়। জাপানে চামড়াজাত পণ্যে ২১.৬ শতাংশ কোটা শুল্ক সম্পূর্ণ সাশ্রয় হয়। আপনি বিভিন্ন খাতের বাটনগুলোতে ক্লিক করে রুট ও কার্বনের মাত্রা দেখতে পারেন।",
+    textEn: "This interactive three-dimensional globe maps real maritime trade corridors radiating from Chattogram Port Hub. Vessels transit via Suez to Rotterdam in twenty-two days and Felixstowe in twenty-four days under zero-tariff preferences. Shipments to Tokyo arrive in fourteen days, saving twenty-one point six percent leather quota duty under Japan's preferential scheme. Use the sector tabs above to inspect transit timelines and carbon footprints for your shipments.",
+    audioUrlBn: "/audio/voice-guide/corridors_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/corridors_en.mp3",
+  },
+  "calculator": {
+    id: "guide_calculator",
+    key: "calculator",
+    routeTrigger: "/#calculator",
+    category: "finance",
+    titleBn: "মার্জিন রিকভারি ক্যালকুলেটর",
+    titleEn: "Direct Export Margin Calculator",
+    textBn: "লোকাল বায়িং হাউজগুলোর মাধ্যমে কাজ করলে কারখানা মালিকদের লাভের একটি বিশাল অংশ মধ্যস্বত্বভোগীরা নিয়ে যায়। এই ক্যালকুলেটরে আপনার পণ্যের পরিমাণ এবং প্রতি ইউনিটের উৎপাদন খরচ বসান। দেখুন মধ্যস্বত্বভোগী ছাড়া সরাসরি রপ্তানি করলে প্রতি চালানে আপনি কত লাখ টাকা অতিরিক্ত মার্জিন ঘরে তুলতে পারবেন।",
+    textEn: "Local buying houses traditionally capture a large spread of factory margins. Adjust the production volume and unit manufacturing cost sliders in this calculator. You will see precisely how many lakhs of Taka in additional profit your manufacturing unit recovers by securing direct international FOB contracts.",
+    audioUrlBn: "/audio/voice-guide/calculator_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/calculator_en.mp3",
+  },
+  "dealroom": {
+    id: "guide_dealroom",
+    key: "dealroom",
+    routeTrigger: "/dealroom",
+    category: "negotiation",
+    titleBn: "লাইভ ডিল রুম ও এআই কো-পাইলট",
+    titleEn: "Deal Room and AI Co-Pilot Guide",
+    textBn: "এটি আপনার লাইভ ডিল রুম। এখানে আন্তর্জাতিক বায়ারদের সাথে সরাসরি ইনকোটার্মস, এফওবি দর এবং এলসি পেমেন্টের শর্ত নিয়ে চুক্তি করতে পারেন। ডানপাশের এআই কো-পাইলট প্রতিটি প্রস্তাব বিশ্লেষণ করে আপনাকে সঠিক আন্তর্জাতিক বাজার দর এবং সম্ভাব্য ঝুঁকি সম্পর্কে সতর্ক করবে।",
+    textEn: "Welcome to the active Deal Room. Here you negotiate directly with international buyers regarding FOB pricing, Incoterms, and payment milestones. Your AI Co-Pilot on the right continuously benchmarks proposal terms against international indices and flags compliance risks in real time.",
+    audioUrlBn: "/audio/voice-guide/dealroom_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/dealroom_en.mp3",
+  },
+  "workspace": {
+    id: "guide_workspace",
+    key: "workspace",
+    routeTrigger: "/app",
+    category: "execution",
+    titleBn: "এক্সপোর্টার ওয়ার্কস্পেস গাইড",
+    titleEn: "Exporter Workspace Guide",
+    textBn: "এই ওয়ার্কস্পেসে আপনি নতুন পণ্য যুক্ত করতে পারেন এবং পাঁচটি স্বয়ংক্রিয় এজেন্টের সাহায্যে মাত্র কয়েক সেকেন্ডে এইচএস কোড নির্ধারণ, স্কোপ টু কার্বন গণনা, এবং আন্তর্জাতিক মানের প্রোফরমা ইনভয়েস ডাউনলোড করতে পারেন।",
+    textEn: "In this workspace, you can intake new product lines or commercial specifications. Our five autonomous FastMCP agents classify Harmonized System codes, estimate Scope 2 carbon footprints, and generate export-grade proforma invoices instantly.",
+    audioUrlBn: "/audio/voice-guide/workspace_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/workspace_en.mp3",
+  },
+  "buyers": {
+    id: "guide_buyers",
+    key: "buyers",
+    routeTrigger: "/buyers",
+    category: "market",
+    titleBn: "ভেরিফায়েড বায়ার ডিরেক্টরি",
+    titleEn: "Verified Buyer Directory Guide",
+    textBn: "এখানে ইউরোপ, যুক্তরাজ্য, জাপান এবং উত্তর আমেরিকার যাচাইকৃত আমদানিকারকদের তালিকা রয়েছে। আপনি ফিল্টার ব্যবহার করে আপনার খাতের বায়ার খুঁজে নিতে পারেন এবং উন্মুক্ত কোটেশনের চাহিদাপত্র দেখে সরাসরি বিড সাবমিট করতে পারেন।",
+    textEn: "Explore our directory of verified corporate importers spanning Europe, the United Kingdom, Japan, and North America. Filter buyers by sector, examine open RFQs, and submit direct competitive bids with full price transparency.",
+    audioUrlBn: "/audio/voice-guide/buyers_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/buyers_en.mp3",
+  },
+  "audit": {
+    id: "guide_audit",
+    key: "audit",
+    routeTrigger: "/audit",
+    category: "compliance",
+    titleBn: "১০০-পয়েন্ট অডিট স্কোরকার্ড",
+    titleEn: "100-Point Audit Scorecard Guide",
+    textBn: "আন্তর্জাতিক বায়ারদের আস্থা অর্জনে এই একশত পয়েন্টের স্কোরকার্ড অত্যন্ত কার্যকর। এটি আপনার কারখানার পরিবেশগত ছাড়পত্র, শ্রমিক সুরক্ষা এবং কমপ্লায়েন্সের সঠিক মূল্যায়ন করে একটি প্রাতিষ্ঠানিক সনদ রিপোর্ট তৈরি করে।",
+    textEn: "Our 100-point institutional compliance scorecard provides an objective verification rubric for international buyers. It evaluates environmental governance, worker safety, and commercial stability, generating a verifiable audit report for global trade.",
+    audioUrlBn: "/audio/voice-guide/audit_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/audit_en.mp3",
+  },
+  "security": {
+    id: "guide_security",
+    key: "security",
+    routeTrigger: "/security",
+    category: "privacy",
+    titleBn: "সার্বভৌম ডেটা শিল্ড ও গোপনীয়তা",
+    titleEn: "Sovereign Data Shield and Privacy Guide",
+    textBn: "আপনার বাণিজ্যিক তথ্যের সার্বভৌমত্ব আমাদের প্রধান অঙ্গীকার। কারখানার কর শনাক্তকরণ নম্বর, ব্যাংক হিসাব এবং গোপন বাণিজ্যিক তথ্য কোনো বহিরাগত সার্ভারে পাঠানোর আগেই স্বয়ংক্রিয়ভাবে ব্রাউজারে বা লোকাল সার্ভারে মাস্ক বা গোপন করা হয়।",
+    textEn: "Commercial confidentiality is guaranteed under our sovereign data shield. Factory tax identification numbers, bank accounts, and proprietary cost structures are redacted locally before commercial queries are processed, ensuring full enterprise data protection.",
+    audioUrlBn: "/audio/voice-guide/security_bn.mp3",
+    audioUrlEn: "/audio/voice-guide/security_en.mp3",
+  },
+};
+
+export const ALL_VOICE_TRACKS: VoiceGuideTrack[] = Object.values(VOICE_GUIDE_TRACKS);
+
+/**
+ * Finds the most relevant voice guide track for a given route.
+ */
+export function getTrackForRoute(pathname: string, hash: string = ''): VoiceGuideTrack | null {
+  // 1. Check exact hash triggers if present (e.g. /#corridor)
+  if (hash) {
+    const fullAnchor = `${pathname}${hash}`;
+    const hashMatch = ALL_VOICE_TRACKS.find(t => t.routeTrigger === fullAnchor || t.routeTrigger === hash);
+    if (hashMatch) return hashMatch;
+  }
+  // 2. Check exact route match
+  const exact = ALL_VOICE_TRACKS.find(t => t.routeTrigger === pathname);
+  if (exact) return exact;
+  // 3. Fallback to landing hero on root
+  if (pathname === '/') return VOICE_GUIDE_TRACKS['landing_hero'] || null;
+  return null;
+}
