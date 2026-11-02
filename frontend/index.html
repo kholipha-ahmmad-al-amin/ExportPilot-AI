@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F6F7F9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#070B14" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('exportpilot_theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>__SEO_TITLE__</title>
+    <meta name="description" content="__SEO_DESCRIPTION__" />
+    <meta name="robots" content="__SEO_ROBOTS__" />
+    <link rel="canonical" href="__SEO_CANONICAL__" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ExportPilot AI" />
+    <meta property="og:title" content="__SEO_TITLE__" />
+    <meta property="og:description" content="__SEO_DESCRIPTION__" />
+    <meta property="og:url" content="__SEO_CANONICAL__" />
+    <meta property="og:image" content="https://exportpilot.equisaas-bd.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ExportPilot AI: Direct export intelligence for Bangladesh" />
+    <meta property="og:locale" content="bn_BD" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="__SEO_TITLE__" />
+    <meta name="twitter:description" content="__SEO_DESCRIPTION__" />
+    <meta name="twitter:image" content="https://exportpilot.equisaas-bd.com/og-image.png" />
+    <meta name="twitter:image:alt" content="ExportPilot AI: Direct export intelligence for Bangladesh" />
+    <script id="seo-structured-data" type="application/ld+json">__SEO_JSONLD__</script>
+
+    <!-- Single-source brand icons generated from public/brand/master-mark.svg -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Self-hosted bilingual webfonts load via index.css @font-face -->
+    <link rel="preload" href="/fonts/plus-jakarta-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/hind-siliguri-bengali-600.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/jetbrains-mono-latin-500.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white min-h-screen transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
